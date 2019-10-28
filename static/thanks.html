@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Fastertracks - GPS adventure tracking and sharing.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fastertracks - GPS adventure tracking and sharing.</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/www-bundle.min.css">
+</head>
+
+<body class="mdl-fastertracks mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+                <h3>Fastertracks</h3>
+            </div>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                <a href="/#overview" class="mdl-layout__tab is-active">Overview</a>
+                <!-- <a href="#signup" class="mdl-layout__tab">Sign up</a> -->
+                <a href="http://www.fastertracks.com/#events" class="mdl-layout__tab">Events</a>
+                <a href="/#about" class="mdl-layout__tab">About</a>
+                <a href="/#faq" class="mdl-layout__tab">FAQ</a>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="mdl-color--white mdl-layout__tab-panel is-active" id="overview" style="display: block !important">
+                <section class="adventure-splash">
+                    <div class="mdl-typography--display-1-color-contrast">Thank you!</div>
+                </section>
+                <section class="mdl-typography--text-center mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone splash-item">
+                        <p>
+                            Your payment was successfully processed. We will contact you within 24 hours for additional details. Looking forward to sharing in your adventure!
+                        </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    </div>
+                </section>
+            </div>
+            <footer class="mdl-mini-footer mdl-color--grey-800">
+                <ul class="mdl-mini-footer__link-list">
+                    <li>
+                        <button class="mdl-mini-footer__social-btn social-btn__twitter" data-social="http://www.twitter.com/"></button>
+                    </li>
+                    <li>
+                        <button class="mdl-mini-footer__social-btn social-btn__facebook" data-social="http://www.facebook.com/"></button>
+                    </li>
+                    <li>
+                        <button class="mdl-mini-footer__social-btn social-btn__instagram" data-social="http://www.instagram.com/"></button>
+                    </li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-64035329-1', 'auto');
+    ga('send', 'pageview');
+
+    $('#top-signup').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'sign-up');
+    });
+    </script>
+</body>
+
+</html>
